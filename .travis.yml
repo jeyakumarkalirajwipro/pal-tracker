@@ -32,8 +32,8 @@ jobs:
         - echo "Deploying $RELEASE_TAG to review"
       deploy:
         provider: cloudfoundry
-        api: $CF_API_URL
-        username: $CF_USERNAME
-        password: $CF_PASSWORD
-        organization: $CF_ORG
+        api: api.sys.evans.pal.pivotal.io
+        username: jeyakumar.kaliraj@wipro.com
+        password: Pivotal1$
+        organization: jeyakumar-kaliraj
         space: review

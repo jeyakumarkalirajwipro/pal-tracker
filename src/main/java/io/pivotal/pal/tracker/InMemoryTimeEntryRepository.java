@@ -21,11 +21,6 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     }
 
     @Override
-    public TimeEntry get(Long id) {
-        return entryMap.get(id);
-    }
-
-    @Override
     public List<TimeEntry> list() {
         return new ArrayList<>(entryMap.values());
     }

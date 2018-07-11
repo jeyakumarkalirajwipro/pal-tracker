@@ -35,13 +35,13 @@ dependencies {
 //        "SPRING_DATASOURCE_URL": testDbUrl,
 //])
 
-flyway {
-    url = developmentDbUrl
-    user = "tracker"
-    password = ""
-    locations = ["filesystem:databases/tracker/migrations"]
-}
-
-task testMigrate(type: FlywayMigrateTask) {
-    url = testDbUrl
-}
+//flyway {
+//    url = developmentDbUrl
+//    user = "tracker"
+//    password = ""
+//    locations = ["filesystem:databases/tracker/migrations"]
+//}
+//
+//task testMigrate(type: FlywayMigrateTask) {
+//    url = testDbUrl
+//}

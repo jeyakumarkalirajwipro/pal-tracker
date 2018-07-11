@@ -19,6 +19,7 @@ dependencies {
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-security")
 
 }
 
@@ -34,14 +35,14 @@ bootRun.environment([
         "WELCOME_MESSAGE": "hello",
         "SPRING_DATASOURCE_URL": developmentDbUrl,
         "MANAGEMENT_SECURITY_ENABLED": false,
-
+        "HTTPS_DISABLED": true,
 ])
 
 test.environment([
         "WELCOME_MESSAGE": "Hello from test",
         "SPRING_DATASOURCE_URL": testDbUrl,
         "MANAGEMENT_SECURITY_ENABLED": false,
-
+        "HTTPS_DISABLED": true,
 ])
 
 flyway {
